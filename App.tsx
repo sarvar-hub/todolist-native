@@ -101,9 +101,15 @@ const styles = StyleSheet.create({
     padding: 15,
     width: 250,
     backgroundColor: "#FFF",
-    borderColor: "#C0C0C0",
-    borderWidth: 1,
     borderRadius: 60,
+    // shadow for ios
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+
+    // Shadow for Android
+    elevation: 5,
   },
   addWrapper: {
     width: 60,
@@ -112,10 +118,19 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     justifyContent: "center",
     alignItems: "center",
-    borderColor: "#C0C0C0",
-    borderWidth: 1,
+    // shadow for ios
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+
+    // Shadow for Android
+    elevation: 5,
   },
   addText: {
-    // fontSize: 20,
+    fontSize: 35,
+    color: "#C0C0C0",
+    textAlign: "center",
+    lineHeight: 39,
   },
 });
