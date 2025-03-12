@@ -1,4 +1,6 @@
-import { SUPABASE_KEY, SUPABASE_URL } from "@env";
 import { createClient } from "@supabase/supabase-js";
 
-export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+export const supabase = createClient(
+  process.env.EXPO_PUBLIC_SUPABASE_URL || "",
+  process.env.EXPO_PUBLIC_SUPABASE_KEY || "",
+);
